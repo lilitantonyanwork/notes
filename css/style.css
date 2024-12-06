@@ -464,6 +464,7 @@ ul{
     line-height: 18px;
     font-weight: 400;
     padding: 7px 9px;
+    position: relative;
 
 }
 .dropdown-item-selected, .dropdown-item:hover{
@@ -471,6 +472,19 @@ ul{
     border-radius: 2px;
     padding: 7px 9px;
     color: rgba(20, 20, 20, 50%);
+}
+.site-theme .dropdown-item-selected:after{
+    content: '';
+    background: rgba(20, 20, 20, 50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    position: absolute;
+    right: 11px;
+    top: 13px;
+}
+.dark .site-theme .dropdown-item-selected:after{
+    background: rgba(246, 245, 245, 50%);
 }
 .settings-links{
     padding: 30px 35px 32px;
