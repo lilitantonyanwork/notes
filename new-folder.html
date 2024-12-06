@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Notes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="notes d-flex">
+    <aside>
+        <div class="aside-header d-flex justify-content-between align-items-center">
+            <a href="index.html" class="title text-decoration-none">NOtes</a>
+            <button class="btn btn-add p-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                    <path d="M6 11L16 1" stroke="#141414" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M15 8V14C15 15.1046 14.1046 16 13 16H3C1.89543 16 1 15.1046 1 14V4C1 2.89543 1.89543 2 3 2H9" stroke="#141414" stroke-width="1.5"/>
+                </svg>
+            </button>
+        </div>
+        <div class="aside-search">
+            <form action="" class="search position-relative">
+                <input type="text" placeholder="Поиск заметок" name="search" id="search">
+                <span class="search-icon"></span>
+            </form>
+        </div>
+        <div class="last-notes">
+            <h2 class="list-title">Последнее</h2>
+            <ul class="notes-list p-0 d-flex flex-column">
+                <li class="note-item">
+                    <a href="#" class="note-link text-decoration-none"><span class="note-icon"></span>Размышления об июне</a>
+                </li>
+                <li class="note-item">
+                    <a href="#" class="note-link text-decoration-none"><span class="note-icon"></span>Мой проект</a>
+                </li>
+                <li class="note-item">
+                    <a href="#" class="note-link text-decoration-none"><span class="note-icon"></span>План путешествий</a>
+                </li>
+            </ul>
+        </div>
+        <div class="notes-folders">
+            <h2 class="list-title d-flex justify-content-between align-items-center">Папки <button class="btn add-folder p-0"></button></h2>
+            <ul class="notes-list p-0 d-flex flex-column">
+                <li class="note-item">
+                    <a href="#" class="note-link active text-decoration-none"><span class="note-folder-icon"></span>Новая папка <button class="btn btn-folder-check p-0">
+                        <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.4" d="M1 5L6 10L15 1" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button></a>
+                </li>
+                <li class="note-item">
+                    <a href="#" class="note-link text-decoration-none"><span class="note-folder-icon"></span>Работа</a>
+                </li>
+                <li class="note-item">
+                    <a href="#" class="note-link text-decoration-none"><span class="note-folder-icon"></span>Путешествия</a>
+                </li>
+                <li class="note-item">
+                    <a href="#" class="note-link text-decoration-none"><span class="note-folder-icon"></span>Мероприятия</a>
+                </li>
+                <li class="note-item">
+                    <a href="#" class="note-link text-decoration-none"><span class="note-folder-icon"></span>Финансы</a>
+                </li>
+            </ul>
+        </div>
+        <div class="notes-other">
+            <h2 class="list-title">Другое <span class="folder-icon"></span></h2>
+            <ul class="notes-list p-0 d-flex flex-column">
+                <li class="note-item">
+                    <a href="#" class="note-link text-decoration-none"><span class="favorite-icon"></span>Избранное</a>
+                </li>
+                <li class="note-item">
+                    <a href="#" class="note-link text-decoration-none" data-bs-toggle="modal" data-bs-target="#modal-settings"> <span class="settings-icon"></span>Настройки</a>
+                </li>
+                <li class="note-item">
+                    <a href="#" class="note-link text-decoration-none"><span class="basket-icon"></span>Корзина</a>
+                </li>
+                <li class="note-item">
+                    <a href="#" class="note-link text-decoration-none"><span class="archive-icon"></span>Архив</a>
+                </li>
+
+            </ul>
+        </div>
+    </aside>
+    <main class="d-flex  align-items-center justify-content-center">
+        <div class="empty-body d-flex justify-content-center flex-column align-items-center">
+            <div class="file-icon"></div>
+            <h1 class="empty-title text-center">Выберите для просмотра</h1>
+            <p class="empty-text text-center">
+                Выберите заметку из списка слева, чтобы просмотреть ее содержимое, или создайте новую заметку.
+            </p>
+        </div>
+    </main>
+</div>
+<div class="modal fade" id="modal-settings" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Настройки</h5>
+                <button type="button" class="btn close p-0" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 30 29" fill="none">
+                            <path d="M8 21.9998L22.1421 7.85762" stroke="#141414" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M22 21.9998L7.85786 7.85762" stroke="#141414" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                    </span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="user d-flex align-items-center">
+                    <div class="user-img">
+                        <img src="img/user.png" alt="user">
+                    </div>
+                    <h2 class="user-title">Андрей Макан</h2>
+                    <button class="btn btn-filter p-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16" fill="none">
+                            <g opacity="0.2">
+                                <path d="M10 1V15" stroke="#141414" stroke-width="1.5" stroke-linecap="round"/>
+                                <circle cx="10" cy="11" r="1.5" fill="#F8F8F8" stroke="#141414"/>
+                                <path d="M2 1V15" stroke="#141414" stroke-width="1.5" stroke-linecap="round"/>
+                                <circle cx="2" cy="5" r="1.5" fill="#F8F8F8" stroke="#141414"/>
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+                <div class="site-theme  d-flex justify-content-between align-items-center">
+                    <div class="theme-name">Тема</div>
+                    <div class="dropdown">
+                        <button class="btn  dropdown-toggle p-0" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Тёмная
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item dropdown-item-selected" href="#">Тёмная</a>
+                            <a class="dropdown-item" href="#">Светлая</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="settings-links d-flex align-items-center justify-content-between">
+                    <a href="#" class="d-flex align-items-center ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                            <path d="M1 9V12C1 13.1046 1.89543 14 3 14H13C14.1046 14 15 13.1046 15 12V9" stroke="#141414" stroke-width="1.5" stroke-linecap="round"/>
+                            <path d="M8 1V10M8 10L5 7M8 10L11 7" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Импорт/Экспорт заметок
+                    </a>
+                    <a href="#" class="logout ">
+                        Выйти
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
