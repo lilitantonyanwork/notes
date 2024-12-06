@@ -159,6 +159,10 @@ ul{
     background-size: 100%;
     margin-bottom: 23px;
 }
+.btn:hover, .btn:focus{
+    box-shadow: none;
+    outline: none;
+}
 
 .btn-folder-check{
     margin-left: auto;
@@ -225,6 +229,9 @@ ul{
 }
 .note-in-folder-disabled{
     opacity: 40%;
+}
+.note-in-folder-disabled .dropdown{
+   pointer-events: none;
 }
 .note-title{
     font-size: 18px;
@@ -328,6 +335,12 @@ ul{
     padding-left: 40px;
     gap: 25px;
 }
+.new-folder{
+    border: none;
+    background: transparent;
+   outline: none;
+    color: rgba(20, 20, 20, 60%);
+}
 .tag{
     color: rgba(20, 20, 20, 50%);
     font-size: 18px;
@@ -337,6 +350,9 @@ ul{
 .modal-dialog{
     max-width: 589px;
 
+}
+.new-folder-name{
+    display: none;
 }
 .modal-content{
     min-height: 214px;
@@ -393,7 +409,7 @@ ul{
     margin: 0;
     outline: none;
 }
-.btn-primary:hover{
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus{
     background: rgba(250, 4, 7, 1);
 }
 .modal{
