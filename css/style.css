@@ -182,6 +182,9 @@ ul{
     background: rgba(20, 20, 20, 3%);
     padding: 35px 30px;
 }
+.aside-opened.opened{
+    display: block!important;
+}
 .aside-opened .title{
     font-size: 22px;
     line-height: 35px;
@@ -688,4 +691,88 @@ ul{
 }
 .dark .alert-saved p{
    color: rgba(172, 167, 16, 70%);
+}
+aside.show{
+    display: block!important;
+}
+@media screen and (max-width: 1100px){
+    aside.opened{
+        display: none;
+    }
+    main{
+        max-width:unset;
+    }
+    main.main-opened{
+        max-width:unset;
+    }
+    main.main-folder{
+        max-width:unset;
+    }
+
+}
+@media screen and (max-width: 990px){
+
+    .navbar-toggler{
+        display: flex!important;
+        padding: 0;
+        position: absolute;
+        right: 30px;
+        top: 10px;
+        outline: none;
+        box-shadow: none;
+    }
+    .navbar-toggler-icon {
+        width: 26px;
+        height: 26px;
+
+        background: url('../img/menu.svg') no-repeat;
+        background-size: 100%   ;
+    }
+    .navbar-toggler-close .navbar-toggler-icon{
+        background: url('../img/close.svg') no-repeat;
+        width: 20px;
+        height: 20px;
+        background-size: 100%   ;
+
+    }
+    main .navbar-toggler{
+        display: none!important;
+    }
+    main .navbar-toggler-show{
+        display: flex!important;
+    }
+    .sidebar{
+        width: 50px;
+        height: 100%;
+        position: relative;
+        min-height: 100vh;
+        background: #F3F3F3;
+    }
+    .sidebar .navbar-toggler{
+        right: 13px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .file-icon{
+        width: 50px;
+        height: 50px;
+        background-size: contain;
+    }
+    .empty-title{
+        font-size: 24px;
+    }
+    .empty-text{
+        font-size: 14px;
+    }
+    .empty-body{
+        padding: 10px;
+    }
+    .sidebar .navbar-toggler {
+        right: 10px;
+    }
+}
+@media screen and (max-width: 480px){
+    aside{
+        width: 100%;
+    }
 }

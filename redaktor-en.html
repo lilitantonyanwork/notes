@@ -13,7 +13,75 @@
 </head>
 <body>
 <div class="notes d-flex">
+    <aside class="d-none">
+        <div class="aside-header d-flex justify-content-between align-items-center">
+            <a href="index.html" class="title text-decoration-none">NOtes</a>
+            <button class="btn btn-add p-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                    <path d="M6 11L16 1" stroke="#141414" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M15 8V14C15 15.1046 14.1046 16 13 16H3C1.89543 16 1 15.1046 1 14V4C1 2.89543 1.89543 2 3 2H9" stroke="#141414" stroke-width="1.5"/>
+                </svg>
+            </button>
+        </div>
+        <div class="aside-search">
+            <form action="" class="search position-relative">
+                <input type="text" placeholder="Поиск заметок" name="search" id="search">
+                <span class="search-icon"></span>
+            </form>
+        </div>
+        <div class="last-notes">
+            <h2 class="list-title">Последнее</h2>
+            <ul class="notes-list p-0 d-flex flex-column">
+                <li class="note-item">
+                    <a href="#" class="note-link text-decoration-none"><span class="note-icon"></span>Размышления об июне</a>
+                </li>
+                <li class="note-item">
+                    <a href="#" class="note-link text-decoration-none"><span class="note-icon"></span>Мой проект</a>
+                </li>
+                <li class="note-item">
+                    <a href="#" class="note-link text-decoration-none"><span class="note-icon"></span>План путешествий</a>
+                </li>
+            </ul>
+        </div>
+        <div class="notes-folders">
+            <h2 class="list-title d-flex justify-content-between align-items-center">Папки <button class="btn add-folder p-0"></button></h2>
+            <ul class="notes-list p-0 d-flex flex-column">
+                <li class="note-item selected">
+                    <a href="#" class="note-link text-decoration-none"><span class="note-folder-icon"></span>Личное</a>
+                </li>
+                <li class="note-item">
+                    <a href="#" class="note-link text-decoration-none"><span class="note-folder-icon"></span>Работа</a>
+                </li>
+                <li class="note-item">
+                    <a href="#" class="note-link text-decoration-none"><span class="note-folder-icon"></span>Путешествия</a>
+                </li>
+                <li class="note-item">
+                    <a href="#" class="note-link text-decoration-none"><span class="note-folder-icon"></span>Мероприятия</a>
+                </li>
+                <li class="note-item">
+                    <a href="#" class="note-link text-decoration-none"><span class="note-folder-icon"></span>Финансы</a>
+                </li>
+            </ul>
+        </div>
+        <div class="notes-other">
+            <h2 class="list-title">Другое <span class="folder-icon"></span></h2>
+            <ul class="notes-list p-0 d-flex flex-column">
+                <li class="note-item">
+                    <a href="#" class="note-link text-decoration-none"><span class="favorite-icon"></span>Избранное</a>
+                </li>
+                <li class="note-item">
+                    <a href="#" class="note-link text-decoration-none" data-bs-toggle="modal" data-bs-target="#modal-settings"> <span class="settings-icon"></span>Настройки</a>
+                </li>
+                <li class="note-item">
+                    <a href="#" class="note-link text-decoration-none"><span class="basket-icon"></span>Корзина</a>
+                </li>
+                <li class="note-item">
+                    <a href="#" class="note-link text-decoration-none"><span class="archive-icon"></span>Архив</a>
+                </li>
 
+            </ul>
+        </div>
+    </aside>
     <aside class="aside-opened">
         <div class="aside-header d-flex justify-content-between align-items-center">
             <button class="btn btn-back">
@@ -318,6 +386,8 @@
 </div>
 
 <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery-3.7.1.min.js"></script>
+
 <script src="js/main.js"></script>
 </body>
 </html>
