@@ -113,8 +113,8 @@ ul{
 .notes-folders .note-link.note-new-folder{
     max-width: calc(100% - 36px);
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 12px;
+    padding-right: 13px;
 }
 .add-folder, .add-folder:hover, .add-folder:active, .add-folder:focus{
     width: 20px;
