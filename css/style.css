@@ -106,6 +106,16 @@ ul{
     background-size: 100%;
     display: flex;
 }
+.note-item.selected .note-folder-icon{
+    background: url('../img/folder-open.svg') no-repeat;
+    background-size: 100%;
+}
+.notes-folders .note-link.note-new-folder{
+    max-width: calc(100% - 36px);
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 .add-folder, .add-folder:hover, .add-folder:active, .add-folder:focus{
     width: 20px;
     height: 17px;
@@ -339,6 +349,7 @@ ul{
     border: none;
     background: transparent;
    outline: none;
+    padding: 0;
     color: rgba(20, 20, 20, 60%);
 }
 .tag{
@@ -360,6 +371,10 @@ ul{
     border-radius: 5px;
 
 }
+.note-new-folder input, .new-folder-name{
+    max-width: calc(100% - 89px);
+}
+
 .modal-header{
     border-bottom: 0;
     padding: 13px 15px;
@@ -609,6 +624,9 @@ ul{
 }
 .alert-remove p{
     color: rgba(240, 44, 47, 1);
+}
+.notes-folders .note-link{
+    gap: 17px;
 }
 .dark .note-text .dropdown-item-remove svg{
     filter: invert(0);
