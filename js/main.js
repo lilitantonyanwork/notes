@@ -48,4 +48,25 @@ $(function (){
             $('.alert-saved').removeClass('show');
         }, 3000)
     })
+
+    const editorInstance = SUNEDITOR.create('editor', {
+        display: 'block',
+        width: '100%',
+        height: 'auto',
+        popupDisplay: 'full',
+        charCounter: true,
+        charCounterLabel: 'Characters :',
+        imageGalleryUrl: 'https://etyswjpn79.execute-api.ap-northeast-1.amazonaws.com/suneditor-demo',
+        buttonList: [
+            // default
+
+            ['bold',  'italic', 'underline', 'strike', 'formatBlock','paragraphStyle', 'blockquote','list', 'table','horizontalRule', 'link', 'image',
+             'codeView', 'fullScreen', ],
+
+        ],
+        placeholder: 'Start typing something...',
+        position: 'right',
+
+    });
+
 })

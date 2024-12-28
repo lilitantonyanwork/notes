@@ -291,7 +291,8 @@ ul{
     left: 0;
 }
 .note-content{
-    height: 100%
+    height: 100%;
+    width: 100%;
 }
 
 .note-input textarea{
@@ -728,6 +729,30 @@ ul{
 }
 aside.show{
     display: block!important;
+}
+.sun-editor .se-btn-tray{
+    display: flex;
+    justify-content: flex-end;
+}
+.sun-editor{
+    border: none;
+}
+.sun-editor .se-toolbar{
+    background: transparent;
+    outline: none
+}
+.sun-editor .se-tooltip[data-command="image"]{
+    opacity: 0.2;
+}
+.se-btn-tool-format{
+    width: 34px!important;
+}
+.se-btn-tool-format .txt{
+    display: none!important;
+}
+.sun-editor .se-btn-select>svg{
+    width: 16px;
+    height: 16px;
 }
 @media screen and (max-width: 1100px){
     aside.opened{
