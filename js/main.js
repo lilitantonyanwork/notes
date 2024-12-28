@@ -60,7 +60,7 @@ $(function (){
         buttonList: [
             // default
 
-            ['bold',  'italic', 'underline', 'strike', 'formatBlock','paragraphStyle', 'blockquote','list', 'table','horizontalRule', 'link', 'image',
+            ['bold',  'italic', 'underline', 'strike', 'formatBlock', 'blockquote','list', 'table','horizontalRule', 'link', 'image',
              'codeView', 'fullScreen', ],
 
         ],
