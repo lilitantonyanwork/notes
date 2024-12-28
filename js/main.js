@@ -66,6 +66,8 @@ $(function (){
         ],
         placeholder: 'Start typing something...',
         position: 'right',
+        charCounter: false,
+        resizingBar:false
 
     });
 
