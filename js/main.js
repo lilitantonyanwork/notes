@@ -48,27 +48,37 @@ $(function (){
             $('.alert-saved').removeClass('show');
         }, 3000)
     })
+    $('.btn-headings').on('click',function (){
+        $('.heading-list').toggleClass('opened')
+    })
+    $('.heading-item').on('click',function (){
+        $('.heading-list').toggleClass('opened')
+    })
+    $('.btn-table').on('click',function (){
+        $('.table-list').toggleClass('opened')
+    })
 
-    const editorInstance = SUNEDITOR.create('editor', {
-        display: 'block',
-        width: '100%',
-        height: 'auto',
-        popupDisplay: 'full',
-        charCounter: true,
-        charCounterLabel: 'Characters :',
-        imageGalleryUrl: 'https://etyswjpn79.execute-api.ap-northeast-1.amazonaws.com/suneditor-demo',
-        buttonList: [
-            // default
+    $( ".table-item" )
+        .on( "mouseenter", function() {
 
-            ['bold',  'italic', 'underline', 'strike', 'formatBlock', 'blockquote','list', 'table','horizontalRule', 'link', 'image',
-             'codeView', 'fullScreen', ],
+            let n = $(this).index();
+            let row = $(this).parent().index()
 
-        ],
-        placeholder: 'Start typing something...',
-        position: 'right',
-        charCounter: false,
-        resizingBar:false
+            $('.table-row').each(function (){
+                if($(this).index() <= row){
+                  $(this).find(".table-item").each(function (){
+                      if($(this).index() <= n){
+                          $(this).addClass('selected')
+                      }
+                  })
+                }
+            })
 
+        } )
+        .on( "mouseleave", function() {
+            $( ".table-item" ).removeClass('selected')
+        } ).on('click',function (){
+        $('.table-list').toggleClass('opened')
     });
 
 })

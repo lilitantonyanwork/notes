@@ -8,8 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/suneditor.min.css">
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="">
@@ -60,18 +59,22 @@
                 </li>
                 <li class="note-item">
                     <a href="#" class="note-link text-decoration-none"><span class="note-folder-icon"></span>Личное</a>
+                    <button class="btn btn-remove position-absolute"></button>
                 </li>
                 <li class="note-item">
                     <a href="#" class="note-link text-decoration-none"><span class="note-folder-icon"></span>Работа</a>
+                    <button class="btn btn-remove position-absolute"></button>
                 </li>
                 <li class="note-item">
                     <a href="#" class="note-link text-decoration-none"><span class="note-folder-icon"></span>Путешествия</a>
                 </li>
                 <li class="note-item">
                     <a href="#" class="note-link text-decoration-none"><span class="note-folder-icon"></span>Мероприятия</a>
+                    <button class="btn btn-remove position-absolute"></button>
                 </li>
                 <li class="note-item">
                     <a href="#" class="note-link text-decoration-none"><span class="note-folder-icon"></span>Финансы</a>
+                    <button class="btn btn-remove position-absolute"></button>
                 </li>
             </ul>
         </div>
@@ -275,7 +278,121 @@
             <div class="note-info">
                 <div class="note-title-block d-flex justify-content-between">
                     <h2 class="title">Планы на этот год</h2>
-                    <span>07.05.24</span>
+                    <ul class="edit-list d-flex ">
+                        <li class="edit-item">
+                            <button class="btn btn-bold">
+                            </button>
+                        </li>
+                        <li class="edit-item">
+                            <button class="btn btn-italic">
+                            </button>
+                        </li>
+                        <li class="edit-item">
+                            <button class="btn btn-underline">
+                            </button>
+                        </li>
+                        <li class="edit-item">
+                            <button class="btn btn-line-trough">
+                            </button>
+                        </li>
+                        <li class="edit-item">
+                            <button class="btn btn-headings">
+                            </button>
+                            <ul class="heading-list">
+                                <li class="heading-item heading-h1">Заголовок 1</li>
+                                <li class="heading-item heading-h2">Заголовок 2</li>
+                                <li class="heading-item heading-h3">Заголовок 3</li>
+                                <li class="heading-item heading-p">Основная часть</li>
+                            </ul>
+                        </li>
+                        <li class="edit-item">
+                            <button class="btn btn-symbols">
+                            </button>
+                        </li>
+                        <li class="edit-item">
+                            <button class="btn btn-quote">
+                            </button>
+                        </li>
+                        <li class="edit-item">
+                            <button class="btn btn-list-numeric">
+                            </button>
+                        </li>
+                        <li class="edit-item">
+                            <button class="btn btn-list-circle">
+                            </button>
+                        </li>
+                        <li class="edit-item">
+                            <button class="btn btn-table">
+                            </button>
+                            <div class="table-list">
+                                <div class="table-row d-flex">
+                                    <div class="table-item" ></div>
+                                    <div class="table-item" ></div>
+                                    <div class="table-item" ></div>
+                                    <div class="table-item" ></div>
+                                    <div class="table-item" ></div>
+                                    <div class="table-item" ></div>
+                                </div>
+                                <div class="table-row d-flex">
+                                    <div class="table-item" ></div>
+                                    <div class="table-item" ></div>
+                                    <div class="table-item" ></div>
+                                    <div class="table-item" ></div>
+                                    <div class="table-item" ></div>
+                                    <div class="table-item" ></div>
+                                </div>
+                                <div class="table-row d-flex">
+                                    <div class="table-item" ></div>
+                                    <div class="table-item" ></div>
+                                    <div class="table-item" ></div>
+                                    <div class="table-item" ></div>
+                                    <div class="table-item" ></div>
+                                    <div class="table-item" ></div>
+                                </div>
+                                <div class="table-row d-flex">
+                                    <div class="table-item" ></div>
+                                    <div class="table-item" ></div>
+                                    <div class="table-item" ></div>
+                                    <div class="table-item" ></div>
+                                    <div class="table-item" ></div>
+                                    <div class="table-item" ></div>
+                                </div>
+                                <div class="table-row d-flex">
+                                    <div class="table-item" ></div>
+                                    <div class="table-item" ></div>
+                                    <div class="table-item" ></div>
+                                    <div class="table-item" ></div>
+                                    <div class="table-item" ></div>
+                                    <div class="table-item" ></div>
+                                </div>
+                                <div class="table-row d-flex">
+                                    <div class="table-item" ></div>
+                                    <div class="table-item" ></div>
+                                    <div class="table-item" ></div>
+                                    <div class="table-item" ></div>
+                                    <div class="table-item" ></div>
+                                    <div class="table-item" ></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="edit-item">
+                            <button class="btn btn-horizontal-line">
+                            </button>
+                        </li>
+                        <li class="edit-item">
+                            <button class="btn btn-link">
+                            </button>
+                        </li>
+                        <li class="edit-item">
+                            <button class="btn btn-code">
+                            </button>
+                        </li>
+                        <li class="edit-item">
+                            <button class="btn btn-full-screen">
+                            </button>
+                        </li>
+                    </ul>
+                    <span class="d-none">07.05.24</span>
                 </div>
                 <div class="note-text"  id="editor">
                     <ol>
@@ -312,7 +429,67 @@
                             </ul>
                         </li>
                     </ol>
+
+                    <p>
+                        <strong>Жирный шрифт</strong>  <i> Шрифт под наклонном</i>   <u>Подчеркнуть</u>   <s>Зачеркнуть</s>
+                    </p>
+                    <h1 class="h1">Заголовок 1 </h1>
+                    <h2 class="h2">
+                        Заголовок 2
+                    </h2>
+                    <h3 class="h3">
+                        Заголовок 3
+                    </h3>
+                    <p class="p">Основная часть</p>
+                    <hr>
+
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <ul>
+                        <li>Точки</li>
+                    </ul>
+                    <p>Показать·скрытые·знаки.¶</p>
+                    <blockquote >
+                        “Не так важно то, что вы получите, достигнув своих целей, как то, кем вы станете, сделав это”
+                        </blockquote>
+
+                    <a href="https://www.behance.net/cd85f200">https://www.behance.net/cd85f200</a>
+                    <pre><code class="language-python">
+import random
+
+# Генерация случайных чисел
+numbers = [random.randint (1, 100) for _ in range (10)]
+
+# Вывод сгенерированного списка
+print ("Сгенерированный список чисел:", numbers)
+
+# Нахождение среднего значения
+average = sum (numbers) / len (numbers)
+
+# Вывод результата
+print ("Среднее значение:", round (average, 2))
+                        </code>
+                        </pre>
                     <br>
+                    <img src="img/img.png" alt="">
                     <p data-bs-toggle="modal" data-bs-target="#chatgpt">Сгенерировано ChatGPT</p>
                 </div>
             </div>
@@ -451,9 +628,11 @@
 </div>
 
 <script src="js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-python.min.js"></script>
+
 
 <script src="js/jquery-3.7.1.min.js"></script>
-<script src="js/suneditor.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
