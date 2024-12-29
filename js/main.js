@@ -80,5 +80,8 @@ $(function (){
         } ).on('click',function (){
         $('.table-list').toggleClass('opened')
     });
+    $('.btn-full-screen').on('click',function (){
+        $('body').toggleClass('full-screen')
+    })
 
 })

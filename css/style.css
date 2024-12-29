@@ -1088,6 +1088,15 @@ blockquote{
 .note-item.selected .btn-remove{
     display: flex;
 }
+.full-screen aside{
+    display: none;
+}
+.full-screen .aside-opened.opened{
+    display: none!important;
+}
+.full-screen main.main-opened{
+    max-width: 100%;
+}
 @media screen and (max-width: 1100px){
     aside.opened{
         display: none;
